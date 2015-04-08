@@ -1,13 +1,17 @@
 # testgrunt_b
 
-This is a structure for a web app working with SASS as CSS preprocessor
-Grunt is used to automate the compiling into a css on public folder
+Basic structure for a web app:
+
+  HTML
+  SASS as CSS preprocessor
+  JS
+  
+  Grunt is used to automate tasks, at the moment:
+
+  - combining all scss files into one css file for distribution
+  - combining (concatenating) all js files into one js file "production.js" for distribution
+  - minifying (uglify) production.js to "production.min.js"
 
 At the moment is working for me...
 
-Next stages:
-
-add JS files and:
-  - concatenate
-  - minify
   

@@ -2,8 +2,8 @@
 
 Basic structure for a web app:
 
-  HTML
-  SASS as CSS preprocessor
+  HTML,
+  SASS as CSS preprocessor,
   JS
   
   Grunt is used to automate tasks, at the moment:

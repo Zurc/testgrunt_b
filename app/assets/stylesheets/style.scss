@@ -1,0 +1,10 @@
+@import 'variables';
+@import 'colors';
+@import 'reset';
+
+body {
+	background: $bg-color;
+	h1 {
+		color: $redd;
+	}
+}

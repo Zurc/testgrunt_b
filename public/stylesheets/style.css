@@ -1,13 +1,2 @@
-html, body, ul, ol {
-  margin: 0;
-  padding: 0; }
-
-h1 {
-  background-color: fff5ee; }
-
-body {
-  background: #ccc; }
-  body h1 {
-    color: #8b3a3a; }
-
+html,body,ul,ol{margin:0;padding:0}h1{background-color:fff5ee}body{background:#ccc}body h1{color:#8b3a3a}
 /*# sourceMappingURL=style.css.map */

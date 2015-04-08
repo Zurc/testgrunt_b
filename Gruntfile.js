@@ -21,7 +21,7 @@ module.exports = function(grunt) {
 		watch: {
 			javascripts: {
 				files: "<%= conf.javascripts %>/**/*",
-				tasks: ['uglify']
+				tasks: ['concat', 'uglify']
 			},
 			sass: {
 				files: "<%= conf.stylesheets %>/**/*",
@@ -31,6 +31,9 @@ module.exports = function(grunt) {
 		// SASS task config
 		sass: {
 			dist: {
+				options: {
+					style: 'compressed'
+				},
 				files: {
 					// destination 			// source file
 					"<%= conf.dist.stylesheets %>/style.css" : "<%= conf.stylesheets %>/style.scss"

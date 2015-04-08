@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAAA,kBAAmB;EAClB,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;;AAGX,EAAG;EACF,gBAAgB,EAAE,MAAM;;ACFzB,IAAK;EACJ,UAAU,ECLA,IAAI;EDMd,OAAG;IACF,KAAK,EEPA,GAAG",
-"sources": ["../../app/assets/stylesheets/_reset.scss","../../app/assets/stylesheets/style.scss","../../app/assets/stylesheets/_variables.scss","../../app/assets/stylesheets/_colors.scss"],
+"mappings": "AAAA,kBAAmB;EAClB,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;;AAGX,EAAG;EACF,gBAAgB,EAAE,MAAM;;ACFzB,IAAK;EACJ,UAAU,ECLA,IAAI;EDMd,OAAG;IACF,KAAK,EEPK,OAAO",
+"sources": ["../../app/assets/stylesheets/_reset.scss","../../app/assets/stylesheets/style.scss","../../app/assets/stylesheets/_variables.scss","../../app/assets/stylesheets/other/_colors.scss"],
 "names": [],
 "file": "style.css"
 }

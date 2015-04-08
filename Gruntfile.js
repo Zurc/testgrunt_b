@@ -21,15 +21,11 @@ module.exports = function(grunt) {
 		watch: {
 			javascripts: {
 				files: "<%= conf.javascripts %>/**/*",
-				tasks: ['concat']
+				tasks: ['uglify']
 			},
 			sass: {
 				files: "<%= conf.stylesheets %>/**/*",
 				tasks: ['sass'],
-				options: {
-					// Start a live reload server on the default port 35729
-					livereload: true,
-				},
 			}
 		},
 		// SASS task config
@@ -38,6 +34,16 @@ module.exports = function(grunt) {
 				files: {
 					// destination 			// source file
 					"<%= conf.dist.stylesheets %>/style.css" : "<%= conf.stylesheets %>/style.scss"
+				}
+			}
+		},
+		// Uglify task config
+		uglify: {
+			dist: {
+				files: {
+					'<%= conf.dist.javascripts %>/production.min.js': [
+					'<%= conf.dist.javascripts %>/production.js'
+					]
 				}
 			}
 		},
@@ -52,14 +58,17 @@ module.exports = function(grunt) {
 		}
 	});
 
+	// load the plugins
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-concat');
+	grunt.loadNpmTasks('grunt-contrib-uglify');
 
 	grunt.registerTask('dist', [
 			'watch',
 			'sass:dist',
-			'concat'
+			'concat',
+			'uglify'
 		]);
 
 	grunt.registerTask('default', ['dist']);
